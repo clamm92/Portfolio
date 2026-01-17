@@ -9,7 +9,7 @@ function ExperienceCard({
   impact
 }) {
   return (
-    <div className="card mb-4 shadow-sm border-0">
+    <div className="card mb-4 shadow-sm border">
       <div className="card-body">
         <h3 className="card-title fw-bold">{role}</h3>
         <p className="card-subtitle text-muted mb-3">
