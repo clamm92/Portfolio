@@ -8,7 +8,23 @@ function Home() {
             className="img-fluid rounded-circle mb-4 w-25 border border-3 border-dark float-start me-4" 
         />
         <p className="mb-3">
-            Hello! I'm a third-year Informatics student at the University of Washington, working toward
+            Hello! I'm a third-year {" "}
+            <a
+                href="https://ischool.uw.edu/programs/informatics"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Informatics
+            </a> {" "}
+            student at the {" "}
+            <a
+                href="https://www.washington.edu/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                University of Washington
+            </a>
+            , seeking
             summer and fall 2026 software engineering internships. I'm interested in building impactful
             software across frontend, backend, and database systems.
         </p>
@@ -27,7 +43,7 @@ function Home() {
         <p className="mb-3">
             I thrive in fast-paced, high-pressure environments. I take initiative naturally, step into
             leadership roles when needed, and care deeply about consistency and growth. I believe real
-            progress comes from showing up every day, working hard, and continuously improving—both
+            progress comes from showing up every day, working hard, and continuously improving, both
             technically and personally.
         </p>
         <p className="mb-3">

@@ -1,6 +1,7 @@
 function ExperienceCard({
   role,
   company,
+  link,
   location,
   dates,
   overview,
@@ -13,7 +14,14 @@ function ExperienceCard({
       <div className="card-body">
         <h3 className="card-title fw-bold">{role}</h3>
         <p className="card-subtitle text-muted mb-3">
-          {company} · {location} · {dates}
+          <a
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+          >
+              {company}
+          </a>{" "}
+          · {location} · {dates}
         </p>
 
         <h6 className="fw-bold">Role Overview</h6>

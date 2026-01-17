@@ -4,6 +4,7 @@ const experienceData = [
   {
     role: "Coding Instructor",
     company: "Coding with Kids",
+    link: "https://www.codingwithkids.com/",
     location: "Portland, OR",
     dates: "May 2025 - September 2025",
 
@@ -27,6 +28,7 @@ const experienceData = [
   {
     role: "Front-End Employee",
     company: "Fred Meyer",
+    link: "https://www.fredmeyer.com/",
     location: "Vancouver, WA",
     dates: "September 2021 - May 2023",
 

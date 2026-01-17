@@ -77,9 +77,7 @@ const projectsData = [
       "Express",
       "MongoDB",
       "Git",
-      "Postman",
-      "VS Code",
-      "Azure Auth"
+      "Postman"
     ]
   },
 
