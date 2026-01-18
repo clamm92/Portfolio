@@ -2,8 +2,8 @@
 
 This is the source code for my personal portfolio. 
 
-[Insert Live Link Here]
+Portfolio can be visited at https://clamm92.github.io/
 
-## 🛠️ Tech Stack
+## Tech Stack
 * **Frontend:** React, Bootstrap CSS
 * **Deployment:** GitHub Pages
