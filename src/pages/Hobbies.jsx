@@ -30,7 +30,7 @@ function Hobbies() {
             <p className="mb-3">
                 Chess is the primary game I play and a favorite way to unwind. I enjoy the
                 strategy and competitive nature of the game, and I'm currently 
-                rated approximately 1800 in rapid 1700 in blitz and bullet,
+                rated approximately 1800 in rapid and 1700 in blitz and bullet,
                 placing me in the top few percent on {" "}
                 <a
                     href="https://www.chess.com/"
