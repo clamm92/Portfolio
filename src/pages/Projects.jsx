@@ -9,10 +9,10 @@ const projectsData = [
     solution:
       "Built a client-requested full-stack booking platform for the local business Happy Nails, enabling technicians to manage services, availability, and customer appointments in real time. The Spring Boot backend handles 6 unique entities, complex scheduling logic, and provides strong database integrity, while the responsive React frontend provides a smooth booking experience. Our client reported that the system reduced manual scheduling effort by approximately 70%, allowing technicians to focus more on service quality and customer satisfaction.",
     technologies: [
-      "React",
-      "TypeScript",
-      "Bootstrap",
       "Spring Boot",
+      "TypeScript",
+      "React",
+      "Bootstrap",
       "Java",
       "PostgreSQL",
       "Gradle",

@@ -26,7 +26,8 @@ const experienceData = [
     images: [
       "/cwk-logo.png",
       "/robotics-cwk.jpg"
-    ]
+    ],
+    skills: ["Python", "Java", "JavaScript", "Teaching", "Leadership"]
   },
 
   {
@@ -53,7 +54,8 @@ const experienceData = [
     images: [
       "/fred-meyer.jpg",
       "/fred-meyer-stands.jpg"
-    ]
+    ],
+    skills: ["Customer Service", "Communication", "Teamwork", "Time Management", "Problem Solving"]
   }
 ];
 

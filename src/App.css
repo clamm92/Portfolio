@@ -1,3 +1,275 @@
+/* ===== EXPANDABLE CARD SYSTEM ===== */
+
+/* Card Wrapper - Prevents hover conflicts between cards */
+.expandable-card-wrapper {
+  position: relative;
+  margin-bottom: 16px;
+  z-index: 1;
+}
+
+.expandable-card-wrapper:hover {
+  z-index: 100;
+}
+
+/* Main Card Container */
+.expandable-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.expandable-card:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+  border-color: #d1d5db;
+}
+
+/* Header Section - Always Visible */
+.card-header-section {
+  padding: 20px 24px;
+}
+
+.card-header-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: #111827;
+  margin: 0;
+}
+
+.card-tagline,
+.card-subtitle {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.company-link {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.company-link:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+.subtitle-separator {
+  margin: 0 6px;
+  color: #9ca3af;
+}
+
+.location-dates {
+  color: #6b7280;
+}
+
+/* Expand Indicator Arrow */
+.expand-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #f3f4f6;
+  color: #6b7280;
+  flex-shrink: 0;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.expand-indicator.rotated {
+  transform: rotate(180deg);
+  background: #e5e7eb;
+  color: #374151;
+}
+
+/* Tech Icons Row */
+.tech-icons-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.tech-icon-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tech-icon-badge:hover {
+  transform: scale(1.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tech-icon-symbol {
+  font-size: 0.85rem;
+}
+
+.tech-icon-more {
+  background: #e5e7eb !important;
+  color: #374151 !important;
+  font-size: 0.7rem;
+}
+
+/* Quick Links Row */
+.quick-links-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.quick-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  color: #374151;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.quick-link-btn:hover {
+  background: #111827;
+  border-color: #111827;
+  color: #fff;
+}
+
+/* Expandable Content Area */
+.card-expandable-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 0.3s ease;
+  opacity: 0;
+}
+
+.expandable-card.expanded .card-expandable-content {
+  max-height: 1200px;
+  opacity: 1;
+}
+
+.card-expandable-inner {
+  padding: 0 24px 24px 24px;
+  border-top: 1px solid #f3f4f6;
+}
+
+/* Content Sections */
+.content-section {
+  margin-top: 16px;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.section-icon {
+  font-size: 1rem;
+}
+
+.section-text {
+  color: #4b5563;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.responsibilities-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.responsibilities-list li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+  color: #4b5563;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.responsibilities-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #6b7280;
+  font-weight: 400;
+}
+
+/* Tech Stack Expanded View */
+.tech-stack-expanded {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px 4px 4px;
+  background: #f9fafb;
+  border: 1px solid currentColor;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.tech-tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tech-tag-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  font-size: 0.7rem;
+}
+
+/* ===== EXISTING STYLES ===== */
+
 /* Project Image Hover Effects */
 .project-image-container {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -74,4 +346,28 @@
   border-radius: 4px;
   font-size: 0.65rem;
   font-weight: 600;
+}
+
+/* ===== RESPONSIVE ADJUSTMENTS ===== */
+@media (max-width: 768px) {
+  .card-header-section {
+    padding: 16px;
+  }
+  
+  .card-expandable-inner {
+    padding: 0 16px 16px 16px;
+  }
+  
+  .card-title {
+    font-size: 1.1rem;
+  }
+  
+  .tech-icon-badge {
+    width: 26px;
+    height: 26px;
+  }
+  
+  .expandable-card.expanded .card-expandable-content {
+    max-height: 2000px;
+  }
 }
