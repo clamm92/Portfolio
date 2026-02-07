@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 function ExperienceCard({
   role,
   company,
@@ -10,6 +12,11 @@ function ExperienceCard({
   impact, 
   images
 }) {
+  const [modalImage, setModalImage] = useState(null);
+
+  const openModal = (src) => setModalImage(src);
+  const closeModal = () => setModalImage(null);
+
   return (
     <div className="card mb-4 shadow-sm border">
       <div className="card-body">
@@ -25,17 +32,18 @@ function ExperienceCard({
           · {location} · {dates}
         </p>
         {images && (
-          <div className="d-flex gap-3 my-3">
+          <div className="d-flex gap-3 my-3 flex-wrap">
             {images.map((src, index) => (
               <div
                 key={index}
-                className="border rounded bg-light overflow-hidden d-flex align-items-center justify-content-center"
-                style={{ width: "120px", height: "120px" }}
+                className="project-image-container border rounded bg-light overflow-hidden d-flex align-items-center justify-content-center"
+                style={{ width: "120px", height: "120px", cursor: "pointer" }}
+                onClick={() => openModal(src)}
               >
                 <img
                   src={src}
-                  alt={`${company} experience ${index + 1}`} // improve alt text 
-                  className="w-100 h-100 object-fit-cover"
+                  alt={`${company} experience ${index + 1}`}
+                  className="w-100 h-100 object-fit-cover project-image"
                 />
               </div>
             ))}
@@ -57,6 +65,16 @@ function ExperienceCard({
         <h6 className="fw-bold mt-3">Impact & Takeaways</h6>
         <p>{impact}</p>
       </div>
+
+      {/* Image Modal */}
+      {modalImage && (
+        <div className="image-modal-overlay" onClick={closeModal}>
+          <div className="image-modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="image-modal-close" onClick={closeModal}>×</button>
+            <img src={modalImage} alt="Enlarged view" className="image-modal-img" />
+          </div>
+        </div>
+      )}
     </div>
   );
 }

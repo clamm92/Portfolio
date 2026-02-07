@@ -18,6 +18,11 @@ const projectsData = [
       "Gradle",
       "Postman",
       "Git"
+    ],
+    images: [
+      "/select-services-nails.png",
+      "/select-times-nails.png",
+      "/happy-nail-er-diagram.png"
     ]
   },
 
@@ -38,6 +43,15 @@ const projectsData = [
       "Chrome Storage API",
       "Content Scripts",
       "Service Workers"
+    ],
+    images: [
+      "/aware-ai-gpt.png",
+      "/aware-ai-info.png",
+      "/awareai-firebase.png"
+    ],
+    links: [
+      { label: "GitHub", url: "https://github.com/clamm92/ai-environmental-tracker", icon: "github" },
+      { label: "Video Demo", url: "https://drive.google.com/file/d/1exTDF3RUaQ5wnZpP4sUgbxY9Qa5wvw1I/view?usp=sharing", icon: "video" }
     ]
   },
 
@@ -54,6 +68,62 @@ const projectsData = [
       "Google Gemini API",
       "Adversarial Search",
       "Transposition Tables"
+    ],
+    images: [
+      { src: "/viola-transcript.png", externalLink: "https://drive.google.com/file/d/12rSB-tPEBykYAf8zznsytAMSes1QnLf7/view?usp=sharing" },
+      { src: "/viola-zobrist.png", externalLink: "https://drive.google.com/file/d/1f8kocjaA0wB3Y3C9bl9khx0-dWJlUk74/view?usp=sharing" }
+    ]
+  },
+
+  {
+    title: "EcoTrack",
+    tagline: "A gamified waste reduction web app that helps users track, visualize, and improve their environmental impact.",
+    problem:
+      "Many people generate waste without understanding its environmental impact or how to improve their habits. Existing tools often lack personalization, feel tedious to use, or introduce cost barriers.",
+    solution:
+      "EcoTrack transforms waste reduction into an engaging, rewarding experience. Users log daily waste activities, earn points for sustainable actions, and visualize progress through interactive charts. A community leaderboard adds motivation through friendly competition, while personalized insights help users understand and improve their habits.",
+    technologies: [
+      "React",
+      "Vite",
+      "Bootstrap",
+      "Chart.js",
+      "Firebase Auth",
+      "Firebase Realtime Database",
+      "Git",
+      "ESLint",
+      "Node.js",
+      "date-fns"
+    ],
+    images: [
+      "/ecotrack-home.png",
+      "/ecotrack-log.png",
+      "/ecotrack-visualizations.png"
+    ],
+    links: [
+      { label: "Website", url: "https://group-project-mayaoden.web.app/", icon: "live" }
+    ]
+  },
+
+  {
+    title: "Restaurant Client-Server Management Platform",
+    tagline: "A full-stack web application designed to manage complex client-server relationships.",
+    problem:
+      "Managing client-server data across multiple users and entities can become difficult without a clear architecture.",
+    solution:
+      "This project implements a modular RESTful backend paired with a clean frontend interface. A carefully designed MongoDB schema ensures scalability, while structured APIs support full CRUD operations.",
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Git",
+      "Postman"
+    ],
+    images: [
+      "/restaurant-dashboard.png",
+      "/restaurant-not-logged.png"
     ]
   },
 
@@ -78,46 +148,6 @@ const projectsData = [
   },
 
   {
-    title: "EcoTrack",
-    tagline: "A gamified waste reduction web app that helps users track, visualize, and improve their environmental impact.",
-    problem:
-      "Many people generate waste without understanding its environmental impact or how to improve their habits. Existing tools often lack personalization, feel tedious to use, or introduce cost barriers.",
-    solution:
-      "EcoTrack transforms waste reduction into an engaging, rewarding experience. Users log daily waste activities, earn points for sustainable actions, and visualize progress through interactive charts. A community leaderboard adds motivation through friendly competition, while personalized insights help users understand and improve their habits.",
-    technologies: [
-      "React",
-      "Vite",
-      "Bootstrap",
-      "Chart.js",
-      "Firebase Auth",
-      "Firebase Realtime Database",
-      "Git",
-      "ESLint",
-      "Node.js",
-      "date-fns"
-    ]
-  },
-
-  {
-    title: "Restaurant Client-Server Management Platform",
-    tagline: "A full-stack web application designed to manage complex client-server relationships.",
-    problem:
-      "Managing client-server data across multiple users and entities can become difficult without a clear architecture.",
-    solution:
-      "This project implements a modular RESTful backend paired with a clean frontend interface. A carefully designed MongoDB schema ensures scalability, while structured APIs support full CRUD operations.",
-    technologies: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "Git",
-      "Postman"
-    ]
-  },
-
-  {
     title: "Vaccine Appointment Reservation System",
     tagline: "A secure and scalable appointment reservation system for managing vaccine scheduling.",
     problem:
@@ -130,6 +160,10 @@ const projectsData = [
       "SQLite",
       "Aurora SQL",
       "IntelliJ IDEA"
+    ],
+    images: [
+      "/vaccine-cli-options.png",
+      "/vaccine-db-schema.png"
     ]
   },
 
@@ -147,6 +181,9 @@ const projectsData = [
       "plotly",
       "ArcGIS",
       "Washington OSPI Data"
+    ],
+    images: [
+      { src: "/washington-state-income.png", externalLink: "https://drive.google.com/file/d/14yDqNR9J-gf0Ht6t_39Mx-g3iTlPCy3E/view?usp=sharing" }
     ]
   },
 
@@ -163,6 +200,9 @@ const projectsData = [
       "JavaScript",
       "Git",
       "VS Code"
+    ],
+    links: [
+      { label: "GitHub", url: "https://github.com/owenwon/seattlehomelessplatform", icon: "github" }
     ]
   }
 ];

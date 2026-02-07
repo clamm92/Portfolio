@@ -5,6 +5,7 @@ import Projects from './pages/Projects';
 import Hobbies from './pages/Hobbies';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
+import './App.css';
 
 function App() {
   return (
