@@ -22,7 +22,7 @@ const projectsData = [
     images: [
       "/select-services-nails.png",
       "/select-times-nails.png",
-      "/happy-nail-er-diagram.png"
+      "/contact-info-nails.png"
     ]
   },
 
