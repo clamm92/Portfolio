@@ -210,7 +210,10 @@ const projectsData = [
 function Projects() {
   return (
     <>
-        <h1 className="fw-bold mb-4 text-center">Projects</h1>
+        <h1 className="fw-bold mb-2 text-center">Projects</h1>
+        <p className="text-muted text-center mb-4" style={{ maxWidth: '600px', margin: '0 auto' }}>
+          A collection of projects I've built, from full-stack apps and browser extensions to data visualizations and hackathon builds. Click any card to learn more.
+        </p>
         <section className="projects-section">
         {projectsData.map((project, index) => (
             <ProjectsCard key={index} {...project} />

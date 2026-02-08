@@ -62,7 +62,17 @@ const experienceData = [
 function Experience() {
   return (
     <>
-        <h1 className="fw-bold mb-4 text-center">Experience</h1>
+        <h1 className="fw-bold mb-2 text-center">Experience</h1>
+        <p className="text-muted text-center mb-4" style={{ maxWidth: '600px', margin: '0 auto' }}>
+          Here's where I've worked and the skills I've developed along the way. Looking for more details?  
+          {" "}<a
+                href="https://drive.google.com/file/d/1Ucw7Jw28DsxZ4KKALhPdVmxMSmUh71uJ/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                View my resume.
+            </a> {" "}
+        </p>
         <section className="experience-section">
         {experienceData.map((experience, index) => (
             <ExperienceCard key={index} {...experience} />
