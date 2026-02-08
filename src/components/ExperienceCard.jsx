@@ -49,8 +49,7 @@ function ExperienceCard({
     <div className="expandable-card-wrapper">
       <div 
         className={`expandable-card ${isExpanded ? 'expanded' : ''}`}
-        onMouseEnter={() => setIsExpanded(true)}
-        onMouseLeave={() => setIsExpanded(false)}
+        onClick={() => setIsExpanded(!isExpanded)}
       >
         {/* Collapsed Header - Always Visible */}
         <div className="card-header-section">
@@ -64,7 +63,7 @@ function ExperienceCard({
               </span>
             </div>
             <p className="card-subtitle text-muted mb-2">
-              <a href={link} target="_blank" rel="noopener noreferrer" className="company-link">
+              <a href={link} target="_blank" rel="noopener noreferrer" className="company-link" onClick={(e) => e.stopPropagation()}>
                 {company}
               </a>
               <span className="subtitle-separator">·</span>
@@ -111,7 +110,7 @@ function ExperienceCard({
                     key={index}
                     className="project-image-container border rounded bg-light overflow-hidden d-flex align-items-center justify-content-center"
                     style={{ width: "100px", height: "100px", cursor: "pointer" }}
-                    onClick={() => openModal(src)}
+                    onClick={(e) => { e.stopPropagation(); openModal(src); }}
                   >
                     <img
                       src={src}

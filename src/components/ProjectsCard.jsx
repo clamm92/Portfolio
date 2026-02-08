@@ -97,8 +97,7 @@ function ProjectsCard({
     <div className="expandable-card-wrapper">
       <div 
         className={`expandable-card ${isExpanded ? 'expanded' : ''}`}
-        onMouseEnter={() => setIsExpanded(true)}
-        onMouseLeave={() => setIsExpanded(false)}
+        onClick={() => setIsExpanded(!isExpanded)}
       >
         {/* Collapsed Header - Always Visible */}
         <div className="card-header-section">
