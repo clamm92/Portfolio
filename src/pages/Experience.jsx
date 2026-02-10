@@ -66,7 +66,7 @@ function Experience() {
         <p className="text-muted text-center mb-4" style={{ maxWidth: '600px', margin: '0 auto' }}>
           Here's where I've worked and the skills I've developed along the way. Looking for more details?  
           {" "}<a
-                href="https://drive.google.com/file/d/1Ucw7Jw28DsxZ4KKALhPdVmxMSmUh71uJ/view?usp=sharing"
+                href="https://drive.google.com/file/d/1L0uaP0Mxw8Ap8_FTUJPqF1rAN-yK7SQm/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
             >
